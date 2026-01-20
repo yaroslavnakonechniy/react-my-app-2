@@ -1,10 +1,10 @@
 import React from "react";
-import { useState } from "react";
+import { useState, ChangeEvent } from "react";
 
 const StatefulComponent = () => {
-    const [text, setText] = useState("Alex2");
+    const [text, setText] = useState<string>("Alex2");
 
-    const handelChange = (e) => {
+    const handelChange = (e: ChangeEvent<HTMLInputElement>) => {
         setText(e.target.value);
     }
 

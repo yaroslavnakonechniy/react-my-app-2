@@ -7,12 +7,12 @@ import StatefulComponent from './components/StatefulComponent'
 import ClassComponent from './components/ClassComponent'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState<number>(0)
 
   return (
     <>
       <div>
-        <StatelessComponent props={"Alex"} />
+        <StatelessComponent name={"Alex0"} />
         <StatefulComponent />
         <ClassComponent />
         <a href="https://vite.dev" target="_blank">

@@ -1,11 +1,15 @@
-import React, { Component } from "react";
+import React, { Component, ChangeEvent  } from "react";
 
-class ClassComponent extends Component {
-    state = {
+type ClassComponentState = {
+    text: string;
+}
+
+class ClassComponent extends Component <{}, ClassComponentState> {
+    state : ClassComponentState = {
         text : "Alex3",
     };
 
-    handelChange = (e) => {
+    handelChange = (e: ChangeEvent <HTMLInputElement>) => {
         this.setState({text: e.target.value});
     } 
 
