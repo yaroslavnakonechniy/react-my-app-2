@@ -27,11 +27,11 @@
 my-react-app/
 ├── src/
 │ ├── components/
-│ │ ├── StatefulComponent.jsx
-│ │ ├── StatelessComponent.jsx
-│ │ └── ClassComponent.jsx
-│ ├── App.jsx
-│ ├── main.jsx
+│ │ ├── StatefulComponent.tsx
+│ │ ├── StatelessComponent.tsx
+│ │ └── ClassComponent.tsx
+│ ├── App.tsx
+│ ├── main.tsx
 │ └── index.css
 ├── public/
 ├── package.json
